@@ -1,0 +1,20 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Local environments and editor settings
+.venv/
+.vscode/
+
+# Local credentials
+.env
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+
+# Diagnostic plots
+results/diagnostic_figures/
+
+# PNG copies of manuscript figures
+results/manuscript_figures/*.png
