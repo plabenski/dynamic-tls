@@ -31,7 +31,7 @@ conda env create -f environment.yml
 conda activate dynamic-tls
 ```
 
-Open a terminal in the publication folder and run the scripts in order:
+From the repository root, run the scripts in order:
 
 ```bash
 python scripts/01_thermal_tolerance_landscapes.py
