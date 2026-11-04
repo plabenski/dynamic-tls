@@ -67,7 +67,7 @@ tables_dir = results_dir / "dynamic_TLS_tables"
 for directory in (figures_dir, diagnostics_dir, tables_dir):
     directory.mkdir(parents=True, exist_ok=True)
 
-SHOW_PLOTS = True  # Set False for non-interactive runs; figures are saved in both modes.
+SHOW_PLOTS = False  # Set False for non-interactive runs; figures are saved in both modes.
 
 # Data from the 2026 heatwave experiment
 TEMP_LEAF_FILE = data_dir / "2026_heatwave_experiment" / "leaf_temp.csv"
@@ -105,7 +105,7 @@ A_MAX_UPPER = 4.0
 # Recovery model parameters
 RECOVERY_MODEL = "fvfm" # alternative "dose"
 MIN_FVFM_RECOVERY = None
-REPAIR_TH = 35.0
+REPAIR_TH = 30.0
 REPAIR_T_REF = 25.0
 REPAIR_EA = 0.8e5
 REPAIR_EH = 3.8e5
@@ -621,7 +621,7 @@ print(
     f'{acclimation_current["T_acclim"]:.3f} °C'
 )
 
-with save_plot_outputs(diagnostics_dir, "dynamic_TLS_current_A_target"):
+with save_plot_outputs(diagnostics_dir, "current_A_target"):
     plot_acclimation_target(
         acclimation_current["A_max"],
         acclimation_current["T_acclim"],
@@ -690,11 +690,11 @@ print(metrics_table)
 
 # Plot predicted Fv/Fm response for every model variant
 with save_plot_outputs(figures_dir, "fvfm", labels=variant_names):
-    plot_variant_fvfm(simulations, df_fvfm, subplot_no='(c)')
+    plot_variant_fvfm(simulations, df_fvfm, subplot_no='(d)')
 
 # Plot intercept evolution for each enabled variant (constant without acclimation).
 with save_plot_outputs(figures_dir, "intercept_evolution", labels='acclimation'):
-    plot_intercept_acclimation(simulations, variant="damage_repair_acclimation", subplot_no="(c)")
+    plot_intercept_acclimation(simulations, variant="damage_repair_acclimation", subplot_no="(d)")
 
 # Plot observed versus predicted Fv/Fm for each model variant
 with save_plot_outputs(figures_dir, "observed_vs_predicted_mean", labels=variant_names):

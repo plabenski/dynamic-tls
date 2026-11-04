@@ -1,6 +1,6 @@
 # Modelling tree responses to heatwaves using a dynamic TLS approach
 
-Data, analysis code and model outputs accompanying *From thermal load to heat injury: Dynamic exposure, acclimation and recovery predict tree responses to heatwaves* by Labenski et al. (submitted). The analyses quantify exposure-duration-dependent thermal tolerance, compare static thermal safety margins with safety metrics based on cumulative thermal load, and model changes in photosystem II (PSII) efficiency during heat exposure and recovery, including repair and acclimation processes.
+Data, analysis code and model outputs accompanying *From thermal load to heat impairment: Dynamic exposure, acclimation and recovery predict tree responses to heatwaves* by Labenski et al. (submitted). The analyses quantify exposure-duration-dependent thermal tolerance, compare static thermal safety margins with safety metrics based on cumulative thermal load, and model changes in photosystem II (PSII) efficiency during heat exposure and recovery, including repair and acclimation processes.
 
 **Manuscript:** submitted, no DOI available yet\
 **Code:** to be added\
