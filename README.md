@@ -3,8 +3,8 @@
 Data, analysis code and model outputs accompanying *From thermal load to heat impairment: Dynamic exposure, acclimation and recovery predict tree responses to heatwaves* by Labenski et al. (submitted). The analyses quantify exposure-duration-dependent thermal tolerance, compare static thermal safety margins with safety metrics based on cumulative thermal load, and model changes in photosystem II (PSII) efficiency during heat exposure and recovery, including repair and acclimation processes.
 
 **Manuscript:** submitted, no DOI available yet\
-**Code:** to be added\
-**Data:** to be added
+**Code & Data are archived on Zenodo:** 10.5281/zenodo.23942344
+
 
 ## Folder structure
 
